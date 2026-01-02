@@ -87,9 +87,10 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 1rem;
-    max-width: 1200px;
+    padding: 2rem 3rem;
+    max-width: 1400px;
     margin: 0 auto;
+    min-height: 400px;
 }
 
 /* Second section (About) formatting */
@@ -112,7 +113,7 @@ p {
 .image-section-project,
 .text-section {
     flex: 1 1 40%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .text-section h1 {
