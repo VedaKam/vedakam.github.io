@@ -15,7 +15,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ h4 {
 
 p {
     color: #555;
-    font-size: 1rem;
+    font-size: 4rem;
     margin-bottom: 15px;
 }
 
@@ -305,7 +305,7 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 8x;
+    padding: 10x;
     background-color: #2e4d6d;
     color: #fff;
     font-size: 0.9rem;
