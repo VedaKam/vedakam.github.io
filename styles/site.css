@@ -113,7 +113,7 @@ p {
 .image-section-project,
 .text-section {
     flex: 1 1 40%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .text-section h1 {
@@ -366,7 +366,8 @@ button:hover {
 
 #modal-debut,
 #modal-urban,
-#modal-research {
+#modal-research,
+#modal-hsca {
     position: fixed;
     top: 0;
     left: 0;
@@ -383,16 +384,18 @@ button:hover {
 
 #modal-debut.hidden,
 #modal-urban.hidden,
-#modal-research.hidden {
+#modal-research.hidden,
+#modal-hsca.hidden {
     display: none;
 }
 
 #modal-debut-content,
 #modal-urban-content,
-#modal-research-content {
+#modal-research-content,
+#modal-hsca-content {
     background: linear-gradient(to bottom, #ffffff, #f8f9fa);
-    width: 95vw;
-    max-width: 1400px;
+    width: 90vw; /* Reduce from 95vw */
+    max-width: 1200px; /* Reduce from 1400px */
     height: 85vh;
     max-height: 900px;
     padding: 3rem 4rem;
@@ -402,6 +405,7 @@ button:hover {
     position: relative;
     animation: modalSlideIn 0.4s ease-out;
 }
+
 
 @keyframes modalSlideIn {
     from {
@@ -416,33 +420,38 @@ button:hover {
 
 #modal-debut-content::-webkit-scrollbar,
 #modal-urban-content::-webkit-scrollbar,
-#modal-research-content::-webkit-scrollbar {
+#modal-research-content::-webkit-scrollbar,
+#modal-hsca-content::-webkit-scrollbar {
     width: 10px;
 }
 
 #modal-debut-content::-webkit-scrollbar-track,
 #modal-urban-content::-webkit-scrollbar-track,
-#modal-research-content::-webkit-scrollbar-track {
+#modal-research-content::-webkit-scrollbar-track,
+#modal-hsca-content::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
 
 #modal-debut-content::-webkit-scrollbar-thumb,
 #modal-urban-content::-webkit-scrollbar-thumb,
-#modal-research-content::-webkit-scrollbar-thumb {
+#modal-research-content::-webkit-scrollbar-thumb,
+#modal-hsca-content::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
 #modal-debut-content::-webkit-scrollbar-thumb:hover,
 #modal-urban-content::-webkit-scrollbar-thumb:hover,
-#modal-research-content::-webkit-scrollbar-thumb:hover {
+#modal-research-content::-webkit-scrollbar-thumb:hover,
+#modal-hsca-content::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
 #modal-debut-content h2,
 #modal-urban-content h2,
-#modal-research-content h2 {
+#modal-research-content h2,
+#modal-hsca-content h2 {
     font-size: 2.8rem;
     margin-bottom: 2.5rem;
     color: #1a1a1a;
@@ -451,7 +460,8 @@ button:hover {
 
 #modal-debut-content h3,
 #modal-urban-content h3,
-#modal-research-content h3 {
+#modal-research-content h3,
+#modal-hsca-content h3 {
     font-size: 1.6rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -461,8 +471,9 @@ button:hover {
 
 #modal-debut-content p,
 #modal-urban-content p,
-#modal-research-content p {
-    max-width: 80ch;
+#modal-research-content p,
+#modal-hsca-content p {
+    max-width: 75ch; /* Keep this for comfortable reading width */
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.8rem;
@@ -471,7 +482,8 @@ button:hover {
 
 #modal-debut-close,
 #modal-urban-close,
-#modal-research-close {
+#modal-research-close,
+#modal-hsca-close {
     position: fixed;
     top: 2.5rem;
     right: 2.5rem;
@@ -494,7 +506,8 @@ button:hover {
 
 #modal-debut-close:hover,
 #modal-urban-close:hover,
-#modal-research-close:hover {
+#modal-research-close:hover,
+#modal-hsca-close:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: rotate(90deg);
     border-color: rgba(255, 255, 255, 0.5);
@@ -502,7 +515,8 @@ button:hover {
 
 #modal-debut-content .image-section-project img,
 #modal-urban-content .image-section-project img,
-#modal-research-content .image-section-project img {
+#modal-research-content .image-section-project img,
+#modal-hsca-content .image-section-project img {
     max-width: 100%;
     width: 100%;
     border-radius: 16px;
@@ -514,7 +528,8 @@ button:hover {
 @media (max-width: 768px) {
     #modal-debut-content,
     #modal-urban-content,
-    #modal-research-content {
+    #modal-research-content,
+    #modal-hsca-content {
         width: 100vw;
         height: 100vh;
         border-radius: 0;
@@ -523,7 +538,8 @@ button:hover {
     
     #modal-debut-close,
     #modal-urban-close,
-    #modal-research-close {
+    #modal-research-close,
+    #modal-hsca-close {
         top: 1.5rem;
         right: 1.5rem;
         font-size: 2.5rem;
