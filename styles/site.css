@@ -35,9 +35,14 @@ h4 {
     font-size: 14px;
 }
 
+h5 {
+    color: black;
+    font-size: 18px;
+}
+
 p {
     color: #555;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
