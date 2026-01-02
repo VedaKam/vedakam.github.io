@@ -37,7 +37,7 @@ h4 {
 
 p {
     color: #555;
-    font-size: 2rem;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
@@ -82,7 +82,7 @@ p {
     display: flex;
     justify-content: space-around; /* Create space between text and image */
     align-items: center; /* Align items vertically */
-    padding: 2rem 4rem; /* Increase padding for larger container */
+    padding: 1rem 1rem; /* Increase padding for larger container */
     max-width: 1200px; /* Set a maximum width */
     margin: 0 auto; /* Center the container on the page */
 }
