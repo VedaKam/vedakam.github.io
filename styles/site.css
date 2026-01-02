@@ -153,7 +153,7 @@ p {
     gap: 20px; /* Adds spacing between cards */
     padding: 20px;
     align-items: center; /* Center the cards horizontally */
-    background-color: #e9e6dc;
+    background-color: #f0f0f0;
 
 }
 
@@ -283,7 +283,7 @@ p {
 .social-links {
     text-align: center;
     margin: 30px auto;
-    padding: 20px; /* Increase padding for a larger box */
+    padding: 5px; /* Increase padding for a larger box */
     max-width: 1000px; /* Increase the maximum width */
     background-color: #fff;
     border-radius: 15px;
@@ -310,7 +310,7 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 5px;
     background-color: #2e4d6d;
     color: #fff;
     font-size: 1rem;
@@ -346,44 +346,15 @@ footer a:hover {
 
 /* MODALS FOR PROJECTS */
 
-#modal-debut {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    z-index: 1000;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-}
 
-#modal-urban {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  z-index: 1000;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-}
 
+#modal-debut,
+#modal-urban,
 #modal-research {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  z-index: 1000;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
+    background: rgba(5, 10, 25, 0.85);
+    backdrop-filter: blur(6px);
 }
+
 
 #modal-debut.hidden {
     display: none;
@@ -397,74 +368,63 @@ footer a:hover {
   display: none;
 }
 
-#modal-debut-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 90%;
-    width: 1500px;
-    max-height: 90%;
-    box-shadow: 0 4px 8px whitesmoke;
-    text-align: left;
-    position: relative;
-    overflow-y: auto; /* ADDED THIS ONLY FOR THIS ONE bc I have a lot of NECESSARY text */
-}
-
-#modal-urban-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 90%;
-  width: 1500px;
-  max-height: 90%;
-  box-shadow: 0 4px 8px whitesmoke;
-  text-align: left;
-  position: relative;
-}
-
+#modal-debut-content,
+#modal-urban-content,
 #modal-research-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 90%;
-  width: 1500px;
-  max-height: 90%;
-  box-shadow: 0 4px 8px whitesmoke;
-  text-align: left;
-  position: relative;
+    background: white;
+    width: 92vw;          /* almost full screen */
+    max-width: 1600px;    /* large desktop support */
+    height: 90vh;         /* tall, immersive */
+    padding: 4rem 5rem;   /* BIG whitespace like the example */
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+    position: relative;
 }
 
-#modal-debut-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+#modal-debut-content p,
+#modal-urban-content p,
+#modal-research-content p {
+    max-width: 75ch;      /* perfect reading width */
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+#modal-debut-content h2,
+#modal-urban-content h2,
+#modal-research-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#modal-debut-content h3,
+#modal-urban-content h3,
+#modal-research-content h3 {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+#modal-debut-close,
+#modal-urban-close,
+#modal-research-close {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    font-size: 3rem;
+    color: white;
     background: none;
     border: none;
-    font-size: 3rem;
     cursor: pointer;
-    color: black;
+    z-index: 2000;
 }
 
-#modal-urban-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 3rem;
-  cursor: pointer;
-  color: black;
-}
-
-#modal-research-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 3rem;
-  cursor: pointer;
-  color: black;
+#modal-debut-content .image-section-project img,
+#modal-urban-content .image-section-project img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px;
+    margin: 3rem 0;
 }
 
 
