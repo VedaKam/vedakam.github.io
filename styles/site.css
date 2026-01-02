@@ -37,7 +37,7 @@ h4 {
 
 p {
     color: #555;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
@@ -124,7 +124,7 @@ p {
 
 .image-section img {
     width: 100%;
-    max-width: 300px;  
+    max-width: 400px;  
     height: auto;
     display: block;
     border-radius: 10px;
