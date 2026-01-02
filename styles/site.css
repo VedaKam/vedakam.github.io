@@ -155,28 +155,37 @@ p {
 
 .card {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 80%;
-    padding: 20px;
-    gap: 20px;
+    max-width: 600px;
+    padding: 30px;
+    gap: 25px;
 }
 
 .text-section-project {
     flex: 1;
-    text-align: left;
+    text-align: center;
+    width: 100%;
 }
 
 .text-section-project h2 {
     font-family: 'Georgia', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #333;
     margin-bottom: 10px;
+}
+
+.text-section-project h3 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
 .text-section-project button {
@@ -184,10 +193,11 @@ p {
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.2s ease;
+    margin-top: 10px;
 }
 
 .text-section-project button:hover {
@@ -197,11 +207,12 @@ p {
 .image-section-project {
     flex: 1;
     text-align: center;
+    width: 100%;
 }
 
 .image-section-project img.projects-pictures {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -465,6 +476,7 @@ button:hover {
     .card {
         flex-direction: column;
         text-align: center;
+        width: 90%;
     }
 
     .text-section-project {
