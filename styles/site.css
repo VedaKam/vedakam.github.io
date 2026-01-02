@@ -7,7 +7,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #d3d3d3;
 }
 
 h1, h2 {
@@ -150,7 +150,7 @@ p {
     gap: 20px;
     padding: 20px;
     align-items: center;
-    background-color: #e9e6dc;
+    background-color: #d3d3d3;
 }
 
 .card {
@@ -336,11 +336,11 @@ button:hover {
 /* Modal Content Container */
 .modal-content {
     background: white;
-    padding: 40px;
+    padding: 50px;
     border-radius: 12px;
-    max-width: 90%;
-    width: 900px;
-    max-height: 85vh;
+    max-width: 95%;
+    width: 1200px;
+    max-height: 90vh;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     text-align: left;
     position: relative;
@@ -396,6 +396,7 @@ button:hover {
     justify-content: center;
     transition: all 0.2s ease;
     line-height: 1;
+    z-index: 10;
 }
 
 .modal-close:hover {
@@ -496,7 +497,7 @@ button:hover {
     /* Modal responsive */
     .modal-content {
         width: 95%;
-        padding: 25px;
+        padding: 30px;
         max-height: 90vh;
     }
 
