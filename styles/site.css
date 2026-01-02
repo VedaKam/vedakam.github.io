@@ -87,7 +87,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 1rem;
     max-width: 1400px;
     margin: 0 auto;
     min-height: 300px;
@@ -98,7 +98,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     background-color: white;
     border-top: 4px solid #2e4d6d;
 }
@@ -106,14 +106,14 @@ p {
 .about .text-section {
     max-width: 100%;
     width: 100%;
-    padding: 0 4rem;
+    padding: 0 1rem;
 }
 
 .image-section,
 .image-section-project,
 .text-section {
     flex: 1 1 40%;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .text-section h1 {
