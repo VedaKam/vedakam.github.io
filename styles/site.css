@@ -7,7 +7,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: #e8e8e8;
 }
 
 h1, h2 {
@@ -150,14 +150,14 @@ p {
     gap: 20px;
     padding: 20px;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #e8e8e8;
 }
 
 .card {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -166,14 +166,21 @@ p {
     width: 95%;
     max-width: 1400px;
     padding: 40px;
-    gap: 30px;
+    gap: 40px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: #007bff;
 }
 
 .text-section-project {
     flex: 1;
     text-align: left;
     width: 100%;
-    max-width: 900px;
+    max-width: 60%;
 }
 
 .text-section-project h2 {
@@ -221,14 +228,25 @@ p {
     flex: 1;
     text-align: center;
     width: 100%;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-section-project img.projects-pictures {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-section-project img.projects-pictures:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .caption-section {
@@ -490,10 +508,16 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 90%;
+        gap: 30px;
     }
 
     .text-section-project {
         text-align: center;
+        max-width: 100%;
+    }
+
+    .image-section-project {
+        max-width: 100%;
     }
 
     .image-section-project img.projects-pictures {
