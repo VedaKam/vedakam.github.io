@@ -46,7 +46,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 8px 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -259,7 +259,7 @@ p {
 .social-links {
     text-align: center;
     margin: 30px auto;
-    padding: 40px; /* Increase padding for a larger box */
+    padding: 20px; /* Increase padding for a larger box */
     max-width: 1000px; /* Increase the maximum width */
     background-color: #fff;
     border-radius: 15px;
