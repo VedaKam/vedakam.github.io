@@ -344,90 +344,6 @@ footer a:hover {
     margin-bottom: 10px; /* Add space below the image for the caption */
 }
 
-/* MODALS FOR PROJECTS */
-
-
-
-#modal-debut,
-#modal-urban,
-#modal-research {
-    background: rgba(5, 10, 25, 0.85);
-    backdrop-filter: blur(6px);
-}
-
-
-#modal-debut.hidden {
-    display: none;
-}
-
-#modal-urban.hidden {
-  display: none;
-}
-
-#modal-research.hidden {
-  display: none;
-}
-
-#modal-debut-content,
-#modal-urban-content,
-#modal-research-content {
-    background: white;
-    width: 92vw;          /* almost full screen */
-    max-width: 1600px;    /* large desktop support */
-    height: 90vh;         /* tall, immersive */
-    padding: 4rem 5rem;   /* BIG whitespace like the example */
-    border-radius: 20px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
-    overflow-y: auto;
-    position: relative;
-}
-
-#modal-debut-content p,
-#modal-urban-content p,
-#modal-research-content p {
-    max-width: 75ch;      /* perfect reading width */
-    font-size: 1.05rem;
-    line-height: 1.75;
-    margin-bottom: 1.5rem;
-}
-
-#modal-debut-content h2,
-#modal-urban-content h2,
-#modal-research-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-#modal-debut-content h3,
-#modal-urban-content h3,
-#modal-research-content h3 {
-    font-size: 1.4rem;
-    margin-top: 3rem;
-}
-
-#modal-debut-close,
-#modal-urban-close,
-#modal-research-close {
-    position: fixed;
-    top: 30px;
-    right: 40px;
-    font-size: 3rem;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 2000;
-}
-
-#modal-debut-content .image-section-project img,
-#modal-urban-content .image-section-project img {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 16px;
-    margin: 3rem 0;
-}
-
-
 button {
     align-self: flex-start; /* Ensure the button aligns with the text */
     padding: 10px 20px;
@@ -442,4 +358,176 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* MODALS FOR PROJECTS */
+
+/* MODALS FOR PROJECTS - Enhanced Full-Screen Style */
+
+#modal-debut,
+#modal-urban,
+#modal-research {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(20, 30, 70, 0.95), rgba(10, 20, 50, 0.97));
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 2rem;
+}
+
+#modal-debut.hidden,
+#modal-urban.hidden,
+#modal-research.hidden {
+    display: none;
+}
+
+#modal-debut-content,
+#modal-urban-content,
+#modal-research-content {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    width: 95vw;
+    max-width: 1400px;
+    height: 85vh;
+    max-height: 900px;
+    padding: 3rem 4rem;
+    border-radius: 24px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    position: relative;
+    animation: modalSlideIn 0.4s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#modal-debut-content::-webkit-scrollbar,
+#modal-urban-content::-webkit-scrollbar,
+#modal-research-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+#modal-debut-content::-webkit-scrollbar-track,
+#modal-urban-content::-webkit-scrollbar-track,
+#modal-research-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#modal-debut-content::-webkit-scrollbar-thumb,
+#modal-urban-content::-webkit-scrollbar-thumb,
+#modal-research-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#modal-debut-content::-webkit-scrollbar-thumb:hover,
+#modal-urban-content::-webkit-scrollbar-thumb:hover,
+#modal-research-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#modal-debut-content h2,
+#modal-urban-content h2,
+#modal-research-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#modal-debut-content h3,
+#modal-urban-content h3,
+#modal-research-content h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #2e4d6d;
+    font-weight: 600;
+}
+
+#modal-debut-content p,
+#modal-urban-content p,
+#modal-research-content p {
+    max-width: 80ch;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    color: #333;
+}
+
+#modal-debut-close,
+#modal-urban-close,
+#modal-research-close {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+#modal-debut-close:hover,
+#modal-urban-close:hover,
+#modal-research-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+#modal-debut-content .image-section-project img,
+#modal-urban-content .image-section-project img,
+#modal-research-content .image-section-project img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px;
+    margin: 3rem 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #modal-debut-content,
+    #modal-urban-content,
+    #modal-research-content {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 2rem 1.5rem;
+    }
+    
+    #modal-debut-close,
+    #modal-urban-close,
+    #modal-research-close {
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 2.5rem;
+        width: 40px;
+        height: 40px;
+    }
 }
