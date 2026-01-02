@@ -80,16 +80,16 @@ p {
 .navbar-links .nav-link:hover {
     color: #007bff8e;
     font-weight: bold;
-    font-size: 1.2rem; /* Match the font size here */
+    font-size: 1.2rem;
 }
 
 .container {
     display: flex;
-    justify-content: space-around; /* Create space between text and image */
-    align-items: center; /* Align items vertically */
-    padding: 1rem 1rem; /* Increase padding for larger container */
-    max-width: 1200px; /* Set a maximum width */
-    margin: 0 auto; /* Center the container on the page */
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Second section (About) formatting */
@@ -102,29 +102,27 @@ p {
     border-top: 4px solid #2e4d6d;
 }
 
-
 .about .text-section {
-    max-width: 100%;      /* ← FULL WIDTH */
+    max-width: 100%;
     width: 100%;
-    padding: 0 4rem;      /* breathing room on sides */
+    padding: 0 4rem;
 }
 
 .image-section,
 .image-section-project,
 .text-section {
     flex: 1 1 40%;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .text-section h1 {
-    margin: 0; /* Remove default margin for precise alignment */
+    margin: 0;
 }
 
 .text-section-project {
-
-    flex: 1; /* Allow the text to take up space proportionally */
-    max-width: 40%; /* Limit the width of the text section */
-    text-align: center; /* Center align the text */
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
 }
 
 .image-section img {
@@ -136,48 +134,46 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .image-section-project img {
-    width: 60%; /* Ad ust the image width to 80% of its container */
-    max-width: 300px; /* Set a maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 60%;
+    max-width: 300px;
+    height: auto;
     display: block;
-    margin: 0 auto; /* Center the image within the container */
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cards-container {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Adds spacing between cards */
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
-    align-items: center; /* Center the cards horizontally */
-    background-color: #f0f0f0;
-
+    align-items: center;
+    background-color: #e9e6dc;
 }
 
 .card {
-    display: flex; /* Arrange text and image side by side */
-    flex-direction: row; /* Horizontal layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Align items vertically */
-    background-color: #fff; /* Light background for the card */
-    border-radius: 16px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    overflow: hidden; /* Ensures content stays within the card */
-    width: 80%; /* Adjust width to fit nicely on the page */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
     padding: 20px;
-    gap: 20px; /* Space between text and image */
+    gap: 20px;
 }
 
 .text-section-project {
-    flex: 1; /* Allow the text section to take up space proportionally */
-    text-align: left; /* Align text to the left */
+    flex: 1;
+    text-align: left;
 }
 
 .text-section-project h2 {
-    font-family: 'Georgia', serif; /* Elegant font for titles */
+    font-family: 'Georgia', serif;
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
@@ -199,61 +195,30 @@ p {
 }
 
 .image-section-project {
-    flex: 1; /* Allow the image section to take up space proportionally */
-    text-align: center; /* Center align the image and caption */
+    flex: 1;
+    text-align: center;
 }
 
 .image-section-project img.projects-pictures {
-    width: 100%; /* Full width of the container */
-    max-width: 300px; /* Set a maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .caption-section {
     font-family: 'Georgia', serif;
     font-size: 0.9rem;
     color: #555;
-    margin-top: 10px; /* Space between image and caption */
+    margin-top: 10px;
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column; /* Stack text and image vertically */
-        text-align: center; /* Center align text and image */
-    }
-
-    .text-section-project {
-        text-align: center; /* Center align text */
-    }
-
-    .image-section-project img.projects-pictures {
-        max-width: 100%; /* Allow image to take full width */
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack items in a column for narrow screens */
-        align-items: center;
-    }
-
-    .image-section,
-    .image-section-project,
-    .text-section,
-    .text-section-project {
-        flex: 1 1 100%;
-        max-width: 100%; /* Remove width constraint */
-        text-align: center; /* Center align text */
-        padding: 0 1rem; /* Add padding for readability */
-
-    }
-
-    .button {
-        width: auto;
-    }
+.projects-pictures {
+    width: 400px;
+    border: 4px solid #2e4d6d;
+    margin-bottom: 10px;
 }
 
 /* Interests Section */
@@ -283,8 +248,8 @@ p {
 .social-links {
     text-align: center;
     margin: 30px auto;
-    padding: 5px; /* Increase padding for a larger box */
-    max-width: 1000px; /* Increase the maximum width */
+    padding: 5px;
+    max-width: 1000px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -327,25 +292,10 @@ footer a:hover {
 
 .hidden {
     display: none;
-  }
-
-
-.caption-section {
-    font-family: Cambria, serif;
-    font-size: 16px; /* Adjusted for better readability */
-    text-align: center; /* Center align the captions */
-    margin-top: 10px; /* Add space between the image and caption */
-}
-
-
-.projects-pictures {
-    width: 400px;
-    border: 4px solid #2e4d6d;
-    margin-bottom: 10px; /* Add space below the image for the caption */
 }
 
 button {
-    align-self: flex-start; /* Ensure the button aligns with the text */
+    align-self: flex-start;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #007bff;
@@ -360,190 +310,211 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* MODALS FOR PROJECTS */
+/* ================================ */
+/* IMPROVED MODALS FOR PROJECTS */
+/* ================================ */
 
-/* MODALS FOR PROJECTS - Enhanced Full-Screen Style */
-
-#modal-debut,
-#modal-urban,
-#modal-research,
-#modal-hsca {
-    position: fixed;
+/* Modal Overlay */
+.modal {
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, rgba(20, 30, 70, 0.95), rgba(10, 20, 50, 0.97));
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
-    align-items: center;
+    z-index: 1000;
+    position: fixed;
     justify-content: center;
-    z-index: 9999;
-    padding: 2rem;
+    align-items: center;
+    backdrop-filter: blur(3px);
 }
 
-#modal-debut.hidden,
-#modal-urban.hidden,
-#modal-research.hidden,
-#modal-hsca.hidden {
+.modal.hidden {
     display: none;
 }
 
-#modal-debut-content,
-#modal-urban-content,
-#modal-research-content,
-#modal-hsca-content {
-    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
-    width: 90vw; /* Reduce from 95vw */
-    max-width: 1200px; /* Reduce from 1400px */
-    height: 85vh;
-    max-height: 900px;
-    padding: 3rem 4rem;
-    border-radius: 24px;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
+/* Modal Content Container */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 90%;
+    width: 900px;
+    max-height: 85vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: left;
     position: relative;
-    animation: modalSlideIn 0.4s ease-out;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-out;
 }
 
-
-@keyframes modalSlideIn {
+@keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(30px) scale(0.95);
+        transform: translateY(-30px);
     }
     to {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
     }
 }
 
-#modal-debut-content::-webkit-scrollbar,
-#modal-urban-content::-webkit-scrollbar,
-#modal-research-content::-webkit-scrollbar,
-#modal-hsca-content::-webkit-scrollbar {
+/* Custom scrollbar for modal content */
+.modal-content::-webkit-scrollbar {
     width: 10px;
 }
 
-#modal-debut-content::-webkit-scrollbar-track,
-#modal-urban-content::-webkit-scrollbar-track,
-#modal-research-content::-webkit-scrollbar-track,
-#modal-hsca-content::-webkit-scrollbar-track {
+.modal-content::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
 
-#modal-debut-content::-webkit-scrollbar-thumb,
-#modal-urban-content::-webkit-scrollbar-thumb,
-#modal-research-content::-webkit-scrollbar-thumb,
-#modal-hsca-content::-webkit-scrollbar-thumb {
-    background: #888;
+.modal-content::-webkit-scrollbar-thumb {
+    background: #2e4d6d;
     border-radius: 10px;
 }
 
-#modal-debut-content::-webkit-scrollbar-thumb:hover,
-#modal-urban-content::-webkit-scrollbar-thumb:hover,
-#modal-research-content::-webkit-scrollbar-thumb:hover,
-#modal-hsca-content::-webkit-scrollbar-thumb:hover {
-    background: #555;
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #1a2d3d;
 }
 
-#modal-debut-content h2,
-#modal-urban-content h2,
-#modal-research-content h2,
-#modal-hsca-content h2 {
-    font-size: 2.8rem;
-    margin-bottom: 2.5rem;
-    color: #1a1a1a;
-    font-weight: 700;
-}
-
-#modal-debut-content h3,
-#modal-urban-content h3,
-#modal-research-content h3,
-#modal-hsca-content h3 {
-    font-size: 1.6rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    color: #2e4d6d;
-    font-weight: 600;
-}
-
-#modal-debut-content p,
-#modal-urban-content p,
-#modal-research-content p,
-#modal-hsca-content p {
-    max-width: 75ch; /* Keep this for comfortable reading width */
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.8rem;
-    color: #333;
-}
-
-#modal-debut-close,
-#modal-urban-close,
-#modal-research-close,
-#modal-hsca-close {
-    position: fixed;
-    top: 2.5rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    font-weight: 300;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-    width: 50px;
-    height: 50px;
+/* Modal Close Button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f0f0f0;
+    border: none;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.8rem;
     cursor: pointer;
-    z-index: 10000;
-    transition: all 0.3s ease;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
     line-height: 1;
 }
 
-#modal-debut-close:hover,
-#modal-urban-close:hover,
-#modal-research-close:hover,
-#modal-hsca-close:hover {
-    background: rgba(255, 255, 255, 0.2);
+.modal-close:hover {
+    background: #e0e0e0;
+    color: #000;
     transform: rotate(90deg);
-    border-color: rgba(255, 255, 255, 0.5);
 }
 
-#modal-debut-content .image-section-project img,
-#modal-urban-content .image-section-project img,
-#modal-research-content .image-section-project img,
-#modal-hsca-content .image-section-project img {
+/* Modal Typography */
+.modal-content h2 {
+    color: #2e4d6d;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #2e4d6d;
+}
+
+.modal-content h3 {
+    color: #2e4d6d;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.modal-content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* Modal Images */
+.modal-content .image-section-project {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.modal-content .image-section-project img {
     max-width: 100%;
-    width: 100%;
-    border-radius: 16px;
-    margin: 3rem 0;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #e0e0e0;
 }
 
-/* Responsive adjustments */
+.modal-content .caption-section {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Add subtle section dividers for better readability */
+.modal-content h3:not(:first-of-type) {
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* ================================ */
+/* RESPONSIVE DESIGN */
+/* ================================ */
+
 @media (max-width: 768px) {
-    #modal-debut-content,
-    #modal-urban-content,
-    #modal-research-content,
-    #modal-hsca-content {
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0;
-        padding: 2rem 1.5rem;
+    .card {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    #modal-debut-close,
-    #modal-urban-close,
-    #modal-research-close,
-    #modal-hsca-close {
-        top: 1.5rem;
-        right: 1.5rem;
-        font-size: 2.5rem;
-        width: 40px;
-        height: 40px;
+
+    .text-section-project {
+        text-align: center;
+    }
+
+    .image-section-project img.projects-pictures {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section,
+    .image-section-project,
+    .text-section,
+    .text-section-project {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    /* Modal responsive */
+    .modal-content {
+        width: 95%;
+        padding: 25px;
+        max-height: 90vh;
+    }
+
+    .modal-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 0.95rem;
+    }
+
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
     }
 }
