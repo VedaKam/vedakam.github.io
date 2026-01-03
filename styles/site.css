@@ -108,7 +108,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 48px 40px 80px;
+    padding: 30px 48px 30px 80px;
     max-width: 1400px;
     margin: 0 auto;
     gap: 100px;
@@ -440,12 +440,17 @@ button:hover {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(8px);
-    padding: 60px 40px;
+    padding: 80px 40px 100px;
     overflow-y: auto;
 }
 
 .modal.hidden {
     display: none;
+}
+
+/* Prevent background scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
 }
 
 /* Modal Content Container - HORIZONTAL */

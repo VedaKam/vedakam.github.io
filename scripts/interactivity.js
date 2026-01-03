@@ -37,19 +37,19 @@ $(document).ready(function() {
     Object.values(modals).forEach(m => {
         m.btn.on('click', function() {
             m.modal.removeClass('hidden');
-            $('body').css('overflow', 'hidden');
+            $('body').addClass('modal-open');
         });
 
         m.close.on('click', function() {
             m.modal.addClass('hidden');
-            $('body').css('overflow', 'auto');
+            $('body').removeClass('modal-open');
         });
 
         // Close on outside click
         m.modal.on('click', function(e) {
             if (e.target === m.modal[0]) {
                 m.modal.addClass('hidden');
-                $('body').css('overflow', 'auto');
+                $('body').removeClass('modal-open');
             }
         });
     });
@@ -60,7 +60,7 @@ $(document).ready(function() {
             Object.values(modals).forEach(m => {
                 m.modal.addClass('hidden');
             });
-            $('body').css('overflow', 'auto');
+            $('body').removeClass('modal-open');
         }
     });
 });
