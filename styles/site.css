@@ -52,7 +52,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 48px;
+    padding: 16px 48px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     position: sticky;
@@ -90,13 +90,13 @@ p {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #4a7c9e 0%, #6b8caf 100%);
     transition: width 0.3s ease;
 }
 
 .navbar-links .nav-link.active,
 .navbar-links .nav-link:hover {
-    color: #667eea;
+    color: #4a7c9e;
 }
 
 .navbar-links .nav-link.active::after,
@@ -108,15 +108,15 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 48px;
+    padding: 60px 48px 60px 80px;
     max-width: 1400px;
     margin: 0 auto;
-    gap: 80px;
+    gap: 100px;
 }
 
 /* Hero section */
 .container:first-of-type {
-    background: linear-gradient(135deg, #fafafa 0%, #f0f4ff 100%);
+    background: linear-gradient(135deg, #fafafa 0%, #e8eef5 100%);
     min-height: calc(100vh - 200px);
 }
 
@@ -139,15 +139,13 @@ p {
 .image-section-project,
 .text-section {
     flex: 1;
-}
-
-.text-section {
-    max-width: 600px;
+    max-width: 650px;
+    padding: 0 32px;
 }
 
 .text-section h1 {
     margin: 0 0 1rem 0;
-    background: linear-gradient(135deg, #1e3a5f 0%, #667eea 100%);
+    background: linear-gradient(135deg, #1e3a5f 0%, #4a7c9e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -156,6 +154,13 @@ p {
 .text-section h3 {
     margin-bottom: 0.75rem;
     color: #555;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.text-section h3:last-of-type {
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
 }
 
 .text-section-project {
@@ -216,9 +221,9 @@ p {
 }
 
 .card:hover {
-    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.15);
+    box-shadow: 0 12px 32px rgba(74, 124, 158, 0.15);
     transform: translateY(-6px);
-    border-color: #667eea;
+    border-color: #4a7c9e;
 }
 
 .text-section-project {
@@ -251,7 +256,7 @@ p {
 }
 
 .text-section-project button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4a7c9e 0%, #5d8db3 100%);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -261,12 +266,12 @@ p {
     font-weight: 600;
     transition: all 0.3s ease;
     margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(74, 124, 158, 0.3);
 }
 
 .text-section-project button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 6px 20px rgba(74, 124, 158, 0.4);
 }
 
 .image-section-project {
@@ -306,7 +311,7 @@ p {
 
 .projects-pictures {
     width: 400px;
-    border: 3px solid #667eea;
+    border: 3px solid #4a7c9e;
     margin-bottom: 10px;
 }
 
@@ -372,16 +377,16 @@ p {
 }
 
 .social-links .icons a:hover {
-    color: #667eea;
-    background-color: #f0f4ff;
+    color: #4a7c9e;
+    background-color: #e8eef5;
     transform: translateY(-4px);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 32px;
-    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3a5f 0%, #3a5a7a 100%);
     color: #fff;
     font-size: 0.95rem;
 }
@@ -404,7 +409,7 @@ button {
     align-self: flex-start;
     padding: 12px 28px;
     font-size: 1rem;
-    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+    background: linear-gradient(135deg, #1e3a5f 0%, #3a5a7a 100%);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -479,12 +484,12 @@ button:hover {
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #4a7c9e 0%, #5d8db3 100%);
     border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #5568d3 0%, #653a8a 100%);
+    background: linear-gradient(180deg, #3a6c8e 0%, #4d7da3 100%);
 }
 
 /* Modal Close Button */
@@ -509,7 +514,7 @@ button:hover {
 }
 
 .modal-close:hover {
-    background: #667eea;
+    background: #4a7c9e;
     color: #fff;
     transform: rotate(90deg);
 }
