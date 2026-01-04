@@ -109,9 +109,9 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px 25px 80px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
-    gap: 140px;
+    gap: 120px;
 }
 
 /* Hero section */
