@@ -139,8 +139,8 @@ p {
 .image-section-project,
 .text-section {
     flex: 1;
-    max-width: 750px;
-    padding: 0 32px;
+    max-width: 850px;
+    padding: 0 25px;
 }
 
 .text-section h1 {
