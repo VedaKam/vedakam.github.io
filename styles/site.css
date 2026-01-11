@@ -171,7 +171,7 @@ p {
 
 .image-section img {
     width: 100%;
-    max-width: 400px;  
+    max-width: 600px;  
     height: auto;
     display: block;
     border-radius: 20px;
@@ -314,6 +314,14 @@ p {
     border: 3px solid #4a7c9e;
     margin-bottom: 10px;
 }
+
+.figma-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #2563eb;
+}
+
 
 /* Interests Section */
 .interests-section {
