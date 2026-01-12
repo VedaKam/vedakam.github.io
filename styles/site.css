@@ -171,7 +171,7 @@ p {
 
 .image-section img {
     width: 100%;
-    max-width: 600px;  
+    max-width: 500px;  
     height: auto;
     display: block;
     border-radius: 20px;
@@ -237,14 +237,12 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
     font-size: 2rem;
     color: #1e3a5f;
-    margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .text-section-project h3 {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 1.25rem;
     font-weight: 500;
 }
 
@@ -252,7 +250,6 @@ p {
     font-size: 1rem;
     color: #4a4a4a;
     line-height: 1.7;
-    margin-bottom: 1.5rem;
 }
 
 .text-section-project button {
