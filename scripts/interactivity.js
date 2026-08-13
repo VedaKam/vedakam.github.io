@@ -1,6 +1,11 @@
 // Modal functionality
 $(document).ready(function() {
     const modals = {
+        'thesis': {
+            btn: $('#learn-more-thesis'),
+            modal: $('#modal-thesis'),
+            close: $('#modal-thesis-close')
+        },
         'research': {
             btn: $('#learn-more-research'),
             modal: $('#modal-research'),
@@ -30,6 +35,16 @@ $(document).ready(function() {
             btn: $('#learn-more-independent'),
             modal: $('#modal-independent'),
             close: $('#modal-independent-close')
+        },
+        'ragaudio': {
+            btn: $('#learn-more-ragaudio'),
+            modal: $('#modal-ragaudio'),
+            close: $('#modal-ragaudio-close')
+        },
+        'podcast': {
+            btn: $('#learn-more-podcast'),
+            modal: $('#modal-podcast'),
+            close: $('#modal-podcast-close')
         }
     };
 
@@ -58,5 +73,22 @@ $(document).ready(function() {
                 m.modal.addClass('hidden');
             });
         }
+    });
+
+    // Filter tab functionality
+    $('.filter-btn').on('click', function() {
+        const filter = $(this).data('filter');
+
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.card').each(function() {
+            const category = $(this).data('category');
+            if (filter === 'all' || category === filter) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
     });
 });

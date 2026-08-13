@@ -21,10 +21,17 @@
         </div>
     </header>
 
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+        <button class="filter-btn" data-filter="creative">Creative</button>
+        <button class="filter-btn" data-filter="projects">Projects</button>
+    </div>
+
     <div class="cards-container">
 
-        <!-- Research (MHCA Thesis) Card -->
-        <div class="card">
+        <!-- Spatial Co-Expression Prediction (MHCA Thesis) Card -->
+        <div class="card" data-category="research">
             <div class="text-section-project">
                 <h2>Spatial Co-Expression Prediction (MHCA)</h2>
                 <p>
@@ -33,7 +40,7 @@
                     achieving R≈0.674 within-chunk and R≈0.548 in zero-shot generalization —
                     with a structured high-error gene module pattern as the key scientific finding.
                 </p>
-                <button id="learn-more-research">Learn More</button>
+                <button id="learn-more-thesis">Learn More</button>
             </div>
             <div class="image-section-project">
                 <img src="images/CMBEPoster.png" alt="2025 CMBE Poster" class="projects-pictures">
@@ -44,48 +51,88 @@
             </div>
         </div>
 
-        <!-- Glioma Segmentation Card -->
-        <div class="card">
+        <!-- Research Experience Card (De Vlaminck / Sabuncu / Wyss) -->
+        <div class="card" data-category="research">
             <div class="text-section-project">
-                <h2>Glioma Segmentation — Safety-Focused Design</h2>
+                <h2>Research Experience</h2>
                 <p>
-                    ML system for glioma segmentation using a retrieval-based approach for
-                    medical summary generation, rather than a generative one — deliberately
-                    chosen to avoid hallucination risk in safety-critical clinical outputs.
+                    Spatial transcriptomics in the De Vlaminck Lab, AI-and-radiology deployment
+                    research with Professor Mert Sabuncu, and drug-gene network research at
+                    Harvard's Wyss Institute — spanning bioinformatics pipelines, clinical AI
+                    evaluation, and graph-based learning for drug repurposing.
                 </p>
-                <button id="learn-more-glioma">Learn More</button>
+                <button id="learn-more-research">Learn More</button>
             </div>
             <div class="image-section-project">
-                <img src="images/UNet.png" alt="Glioma Segmentation" class="projects-pictures">
+                <img src="images/PCA-Plot.png" alt="Research Experience" class="projects-pictures">
                 <figure class="caption-section">
-                    <figcaption>Retrieval-based interpretable medical AI</figcaption>
+                    <figcaption>De Vlaminck Lab · Sabuncu Lab · Wyss Institute</figcaption>
                 </figure>
             </div>
         </div>
 
-        <!-- Stealth Health Tech Card -->
-        <div class="card">
+        <!-- Independent Research Card -->
+        <div class="card" data-category="research">
             <div class="text-section-project">
-                <h2>Stealth Health Tech</h2>
+                <h2>Independent Research</h2>
                 <p>
-                    Research-focused project exploring evaluation and benchmarking methods
-                    for AI systems in healthcare settings, with emphasis on reliability,
-                    observability, and failure modes.
+                    Designed and built end-to-end hardware and machine learning systems spanning
+                    smart sensing, computational genomics, and healthcare operations, with a
+                    focus on real-world impact.
                 </p>
-                <button id="learn-more-stealth">Learn More</button>
+                <button id="learn-more-independent">Learn More</button>
             </div>
             <div class="image-section-project">
-                <img src="images/Programming.jpg" alt="Stealth Health Tech" class="projects-pictures">
+                <img src="images/MUSS.png" alt="Independent Research" class="projects-pictures">
                 <figure class="caption-section">
-                    <figcaption>AI Evaluation & Healthcare Systems</figcaption>
+                    <figcaption>End-to-End ML Systems for Healthcare & Smart Cities</figcaption>
                 </figure>
             </div>
         </div>
 
-        <!-- DEBUT Card -->
-        <div class="card">
+        <!-- Coord (Creative) -->
+        <div class="card" data-category="creative">
             <div class="text-section-project">
-                <h2>DEBUT — Team Lead</h2>
+                <h2>Coord — Product Design</h2>
+                <p>
+                    Led end-to-end product design for Coord, a collaborative workspace
+                    for engineering project teams, grounded in user research, system
+                    constraints, and iterative prototyping to improve coordination,
+                    visibility, and decision-making.
+                </p>
+                <button id="learn-more-design">Learn More</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/Coord.png" alt="Coord Design Project" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>Coord — Collaborative Workspace Prototype</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- NextGenHealth Podcast (Creative) -->
+        <div class="card" data-category="creative">
+            <div class="text-section-project">
+                <h2>NextGenHealth — Podcast</h2>
+                <p>
+                    Host of NextGenHealth, part of The Futurism Project: conversations with
+                    clinicians, engineers, students, founders, and thought leaders working
+                    toward an interoperable health tech ecosystem.
+                </p>
+                <button id="learn-more-podcast">Learn More</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/Photo.png" alt="NextGenHealth Podcast" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>NextGenHealth — hosted by Veda Kam</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- SteadyStride / DEBUT (Projects) -->
+        <div class="card" data-category="projects">
+            <div class="text-section-project">
+                <h2>SteadyStride — DEBUT Team Lead</h2>
                 <p>
                     Led a 70-member, cross-functional product development team (R&amp;D, economics, operations)
                     to design and clinically evaluate SteadyStride, a self-stabilizing cane for Parkinson’s disease.
@@ -103,53 +150,74 @@
             </div>
         </div>
 
-        <!-- Design Card -->
-        <div class="card">
+        <!-- Glioma Segmentation (Projects) -->
+        <div class="card" data-category="projects">
             <div class="text-section-project">
-            <h2>Design</h2>
-            <p>
-                Led end-to-end product design for Coord, a collaborative workspace
-                for engineering project teams, grounded in user research, system
-                constraints, and iterative prototyping to improve coordination,
-                visibility, and decision-making.
-            </p>
-            <button id="learn-more-design">Learn More</button>
+                <h2>Glioma Segmentation — Safety-Focused Design</h2>
+                <p>
+                    ML system for glioma segmentation using a retrieval-based approach for
+                    medical summary generation, rather than a generative one — deliberately
+                    chosen to avoid hallucination risk in safety-critical clinical outputs.
+                </p>
+                <button id="learn-more-glioma">Learn More</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/UNet.png" alt="Glioma Segmentation" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>Retrieval-based interpretable medical AI</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="image-section-project">
-            <img src="images/Coord.png" alt="Coord Design Project" class="projects-pictures">
-            <figure class="caption-section">
-                <figcaption>Coord — Collaborative Workspace Prototype</figcaption>
-            </figure>
-        </div>
-    </div>
 
-    <!-- Independent Research Card -->
-    <div class="card">
-        <div class="text-section-project">
-            <h2>Independent Research</h2>
-            <p>
-                Designed and built end-to-end hardware and machine learning systems spanning
-                smart sensing, computational genomics, and healthcare operations, with a
-                focus on real-world impact.
-            </p>
-            <button id="learn-more-independent">Learn More about Independent Research</button>
+        <!-- RAG Audio / Fish Audio (Projects) -->
+        <div class="card" data-category="projects">
+            <div class="text-section-project">
+                <h2>RAG Audio Assistant</h2>
+                <p>
+                    An audio retrieval-augmented generation pipeline: transcribes speech,
+                    embeds and retrieves relevant context, generates a response, and speaks
+                    it back using text-to-speech — built as a resume project for a Fish
+                    Audio internship application.
+                </p>
+                <button id="learn-more-ragaudio">Learn More</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/CAD.png" alt="RAG Audio Assistant" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>Transcribe → Embed → Retrieve → Generate → Speak</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="image-section-project">
-            <img src="images/MUSS.png" alt="Independent Research" class="projects-pictures">
-            <figure class="caption-section">
-                <figcaption>End-to-End ML Systems for Healthcare & Smart Cities</figcaption>
-            </figure>
+
+        <!-- Stealth Health Tech (Projects) -->
+        <div class="card" data-category="projects">
+            <div class="text-section-project">
+                <h2>Stealth Health Tech</h2>
+                <p>
+                    Research-focused project exploring evaluation and benchmarking methods
+                    for AI systems in healthcare settings, with emphasis on reliability,
+                    observability, and failure modes.
+                </p>
+                <button id="learn-more-stealth">Learn More</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/Programming.jpg" alt="Stealth Health Tech" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>AI Evaluation & Healthcare Systems</figcaption>
+                </figure>
+            </div>
         </div>
+
     </div>
 
 
     <!-- ========================= -->
-    <!-- Modal: Research (MHCA Thesis) -->
+    <!-- Modal: Spatial Co-Expression Prediction (MHCA) -->
     <!-- ========================= -->
 
-    <div id="modal-research" class="modal hidden">
+    <div id="modal-thesis" class="modal hidden">
     <div class="modal-content">
-        <button id="modal-research-close" class="modal-close">&times;</button>
+        <button id="modal-thesis-close" class="modal-close">&times;</button>
         <h2>Spatial Co-Expression Prediction (MHCA)</h2>
 
         <h3>Overview</h3>
@@ -170,6 +238,17 @@
             modules against ENCODE chromatin state data, and (3) multimodal intervention using
             Borzoi-predicted ATAC track outputs as auxiliary input.
         </p>
+    </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- Modal: Research Experience -->
+    <!-- ========================= -->
+
+    <div id="modal-research" class="modal hidden">
+    <div class="modal-content">
+        <button id="modal-research-close" class="modal-close">&times;</button>
+        <h2>Research Experience</h2>
 
         <h3>De Vlaminck Lab — Cornell Meinig School of Biomedical Engineering</h3>
         <p>
@@ -182,10 +261,10 @@
         <h3>Sabuncu Lab — Cornell Tech & Weill Cornell Medicine</h3>
         <p>
             Initiated research focused on gaps between AI model development and
-            real-world clinical deployment in radiology workflows. Conducted
-            interviews with practicing neuroradiologists to inform evaluation
-            criteria and system design. Supported research on ordinal regression
-            models for Alzheimer’s disease diagnosis and prognosis.
+            real-world clinical deployment in radiology workflows, with Professor
+            Mert Sabuncu. Conducted interviews with practicing neuroradiologists to
+            inform evaluation criteria and system design. Supported research on
+            ordinal regression models for Alzheimer’s disease diagnosis and prognosis.
         </p>
 
         <h3>Wyss Institute for Biologically Inspired Engineering — Harvard University (Summer 2024)</h3>
@@ -245,10 +324,95 @@
         </div>
     </div>
 
+    <!-- ========================= -->
+    <!-- Modal: RAG Audio Assistant -->
+    <!-- ========================= -->
 
-<!-- ========================= -->
-<!-- Modal: Cornell DEBUT -->
-<!-- ========================= -->
+    <div id="modal-ragaudio" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-ragaudio-close" class="modal-close">&times;</button>
+            <h2>RAG Audio Assistant</h2>
+
+            <h3>Overview</h3>
+            <p>
+                An end-to-end audio retrieval-augmented generation pipeline, built as a
+                resume-strengthening project for a Fish Audio internship application.
+            </p>
+
+            <h3>Pipeline</h3>
+            <p>
+                Transcribes incoming speech, embeds and retrieves relevant context, generates
+                a response using an LLM, and speaks the response back using text-to-speech —
+                a full transcribe → embed → retrieve → generate → speak loop.
+            </p>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- Modal: NextGenHealth Podcast -->
+    <!-- ========================= -->
+
+    <div id="modal-podcast" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-podcast-close" class="modal-close">&times;</button>
+            <h2>NextGenHealth</h2>
+
+            <h3>About</h3>
+            <p>
+                Part of The Futurism Project. NextGenHealth brings together clinicians,
+                engineers, students, thought leaders, and founders to talk through what it
+                takes to build the next generation of health tech — with an emphasis on
+                interoperability across the fragmented healthcare system.
+            </p>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- Modal: Stealth Health Tech -->
+    <!-- ========================= -->
+
+    <div id="modal-stealth" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-stealth-close" class="modal-close">&times;</button>
+            <h2>Stealth Health Tech</h2>
+
+            <h3>Project Overview</h3>
+            <p>
+                This is an ongoing research and engineering project focused on the
+                benchmarking and evaluation of AI systems in healthcare workflows.
+                The work centers on how AI agents behave under realistic clinical
+                constraints, rather than on deploying end-user products.
+            </p>
+
+            <h3>Technical Focus</h3>
+            <p>
+                The project investigates methods for evaluating AI-assisted clinical
+                tasks, including agent reliability, failure modes, and observability.
+                Emphasis is placed on designing evaluation frameworks that make model
+                behavior auditable and defensible in high-stakes settings.
+            </p>
+
+            <h3>Current Status</h3>
+            <p>
+                The project is in active development and remains private while core
+                evaluation infrastructure and experimental design are being refined.
+                Select components and insights may be shared publicly once the
+                framework reaches a stable and reproducible state.
+            </p>
+
+            <h3>Motivation</h3>
+            <p>
+                Many healthcare AI systems are assessed primarily on performance
+                metrics that do not capture real-world failure modes. This project
+                aims to bridge that gap by focusing on evaluation, interpretability,
+                and system-level accountability rather than model outputs alone.
+            </p>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- Modal: Cornell DEBUT / SteadyStride -->
+    <!-- ========================= -->
 
     <div id="modal-debut" class="modal hidden">
         <div class="modal-content">
@@ -310,7 +474,6 @@
         </div>
     </div>
 
-
     <!-- ========================= -->
     <!-- Modal: Design (Coord) -->
     <!-- ========================= -->
@@ -318,7 +481,7 @@
     <div id="modal-design" class="modal hidden">
         <div class="modal-content">
             <button id="modal-design-close" class="modal-close">&times;</button>
-            <h2>Product & Systems Design</h2>
+            <h2>Coord — Product Design</h2>
 
             <h3>Coord — Collaborative Workspace for Engineering Teams</h3>
             <p>
@@ -387,50 +550,6 @@
             </a>
             </br>
             </div>
-        </div>
-    </div>
-
-
-    <!-- ========================= -->
-    <!-- Modal: Stealth Health Tech -->
-    <!-- ========================= -->
-
-    <div id="modal-stealth" class="modal hidden">
-        <div class="modal-content">
-            <button id="modal-stealth-close" class="modal-close">&times;</button>
-            <h2>Stealth Health Tech</h2>
-
-            <h3>Project Overview</h3>
-            <p>
-                This is an ongoing research and engineering project focused on the
-                benchmarking and evaluation of AI systems in healthcare workflows.
-                The work centers on how AI agents behave under realistic clinical
-                constraints, rather than on deploying end-user products.
-            </p>
-
-            <h3>Technical Focus</h3>
-            <p>
-                The project investigates methods for evaluating AI-assisted clinical
-                tasks, including agent reliability, failure modes, and observability.
-                Emphasis is placed on designing evaluation frameworks that make model
-                behavior auditable and defensible in high-stakes settings.
-            </p>
-
-            <h3>Current Status</h3>
-            <p>
-                The project is in active development and remains private while core
-                evaluation infrastructure and experimental design are being refined.
-                Select components and insights may be shared publicly once the
-                framework reaches a stable and reproducible state.
-            </p>
-
-            <h3>Motivation</h3>
-            <p>
-                Many healthcare AI systems are assessed primarily on performance
-                metrics that do not capture real-world failure modes. This project
-                aims to bridge that gap by focusing on evaluation, interpretability,
-                and system-level accountability rather than model outputs alone.
-            </p>
         </div>
     </div>
 
