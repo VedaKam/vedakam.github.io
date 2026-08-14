@@ -184,6 +184,36 @@ p {
     font-size: 1.05rem;
 }
 
+.about-list {
+    margin: 0 0 1.5rem 0;
+    padding-left: 24px;
+}
+
+.about-list li {
+    color: #4a4a4a;
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.about-list ul {
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}
+
+.about-list ul li {
+    font-size: 0.95rem;
+}
+
+.about .text-section a {
+    color: #4a7c9e;
+    font-weight: 600;
+}
+
+.about .text-section a:hover {
+    text-decoration: none;
+}
+
 .text-section-project {
     flex: 1;
     max-width: 40%;
